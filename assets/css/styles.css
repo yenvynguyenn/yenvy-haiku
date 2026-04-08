@@ -9,15 +9,14 @@ html, body {
 }
 
 body {
-    background-color: #1a120b; 
-    color: #f5f0e6; 
+    background-color: #1a120b;  
     font-size: 3rem; 
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     margin: 0;
-    background-image: url("../img/coffee GIF.gif");
+    background-image: url("../img/coffee.large.gif");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
