@@ -3,23 +3,67 @@
 <head>
 	<meta charset="utf-8">
 	<title>Haiku</title>
-	<link rel="stylesheet" href="./assets/css/styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+	<style>
+		body {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			min-height: 100vh;
+			background: #fff5e6; /* soft creamy warm background */
+			font-family: 'Roboto Slab', serif;
+			color: #4b3621; /* dark coffee brown */
+			margin: 0;
+		}
+
+		.haiku {
+			display: grid;
+			grid-template-rows: repeat(3, auto);
+			row-gap: 1em;
+			text-align: center;
+			font-size: 2em;
+			line-height: 1.5em;
+		}
+
+		.haiku div {
+			display: inline-block;
+			margin: 0 0.3em;
+			transition: transform 0.3s ease, color 0.3s ease;
+		}
+
+		.haiku div:hover {
+			transform: translateY(-3px);
+			color: #6f4e37; /* lighter brown on hover */
+			cursor: default;
+		}
+
+		.haiku .cold {
+			color: #5c3a21; /* slightly lighter brown instead of gray */
+			opacity: 0.9;  /* subtle “cooling” effect but still warm */
+			font-weight: 400;
+		}
+	</style>
 </head>
 <body>
-	<div class="grid-container"></div>
+	<div class="haiku">
+		<!-- Line 1 -->
 		<div>A</div>
-		<div>radiant</div>
-		<div class="last">young</div>
-		<div>woman</div>
-		<div>to</div>
-		<div>light</div>
-		<div>the</div>
-		<div class="last">darkest</div>
-		<div>corners</div>
+		<div>warm</div>
+		<div>shot</div>
 		<div>of</div>
-		<div class="last">winter</div>
-	</div>
+		<div>espresso.</div>
 
-	<script src="./assets/js/main.js"></script>
+		<!-- Line 2 -->
+		<div>Mind</div>
+		<div>wanders</div>
+		<div>for</div>
+		<div>hours.</div>
+
+		<!-- Line 3 -->
+		<div>The</div>
+		<div>cup</div>
+		<div>gets</div>
+		<div class="cold">cold.</div>
+	</div>
 </body>
 </html>
