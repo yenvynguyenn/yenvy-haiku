@@ -14,7 +14,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    background-image: url("img/espresso.gif");
+    background-image: url("../img/espresso.gif");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
